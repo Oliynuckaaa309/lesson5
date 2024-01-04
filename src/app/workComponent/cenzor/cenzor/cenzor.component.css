@@ -1,0 +1,78 @@
+.mn-block{
+    width: 600px;
+    min-height: 200px;
+    background-color: rgb(250, 244, 244);
+    margin: 100px auto; 
+
+}
+.mn-words{
+    padding: 20px;
+    display: flex;
+
+}
+.mn-bad-words{
+    font-weight: 500;
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.mn-bad-words1{
+    font-weight: 500;
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+    padding-left: 10px;
+}
+.mn-first-area{
+    height: 30px;
+    width: 65%;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.mn-first-area-change{
+    border: 2px solid red;
+    height: 30px;
+    width: 65%;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.mn-btn{
+    width: 10%; 
+    height: 34px;
+    margin: 10px;
+    background-color: rgb(255, 166, 0);
+    border: none;
+}
+.mn-btn-1{
+    width: 10%; 
+    height: 34px;
+    margin: 10px;
+    color: aliceblue !important;
+    background-color:red;
+    border: none;
+}
+.mn-second{
+    margin-left: 10px;
+    padding-left: 10px;
+    height: 100px;
+    width: 94%;
+    margin-top: 15px;
+}
+.mn-second_2{
+    margin-left: 10px;
+    padding-left: 10px;
+    height: 100px;
+    width: 94%;
+    margin-top: 15px;
+    border: 2px solid red;
+}
+.mn-last-btn{
+    margin-left: 10px;
+    height: 50px;
+    width: 97%;
+    margin-top: 15px;
+    color: white;
+    background-color: green;
+    border: none;
+}

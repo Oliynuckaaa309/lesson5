@@ -1,0 +1,19 @@
+<div [class]="mainBlock">
+    <div [class]="mainBlock1">
+        <div [class]="mainBlock2"  >Bad words:</div>
+        <div [class]="mainBlock3" [(ngModel)]="badWordsDiv"  ngDefaultControl> {{badWordsDiv}} </div>
+    </div>
+
+    <div>
+        <input type="text" [placeholder]="customPlaceholder"  [(ngModel)]="badWords" [class]="mainText"  ngDefaultControl>
+        <button [class]="mainButton"  (click)="addWord()" >Add</button>
+        <button [class]="mainButton1"  (click)="removeWord()">Reset</button>
+    </div>
+
+    <div>
+        <input type="text" [placeholder]="areaPlaceholder" [(ngModel)]="someProText" [class]="secondTextArea" ngDefaultControl>
+    </div>
+
+<button [class]="lastButton" (click)="checkWord()">Cenzor</button>
+
+</div>

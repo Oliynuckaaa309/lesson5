@@ -1,0 +1,46 @@
+<div class="main-block-wrap">
+    <div class="main-block-input">
+        <p>Login</p>
+        <input type="text" name="login" [(ngModel)]="loginName" ngDefaultControl   >
+        <p>Password</p>
+        <input type="password" name="password" [(ngModel)]="passwordName"  ngDefaultControl >
+        <p>Email address</p>
+        <input type="email"  name="emai" [(ngModel)]="emailName" ngDefaultControl >
+        <ng-container *ngIf="!isEdit; else elseTemplate">
+            <button value="add" class="button-add" (click)="addUser()" >Add user</button>
+        </ng-container>
+        <ng-template #elseTemplate>
+            <button value="edit" class="button-add-1" (click)="saveEditUser()" >Save edit user</button>
+        </ng-template>
+        
+           
+        </div>
+        
+
+     <div class="main-block-generate">
+        <table>
+            <thead>
+            <tr>
+              <th>#</th>
+              <th>Login</th>
+              <th>Password</th>
+              <th>Email</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr *ngFor="let info of userInfo, let i= index" >
+                <td>{{i+1}}.</td>
+                <td>{{info.login}}</td>
+                <td>{{info.password}}</td>
+                <td>{{info.email}}</td>
+                 <td><button class="edit-style" (click)="editUser(i)" >Edit</button></td> 
+                <td><button class="delete-style" (click)="deleteUser(i) " [disabled]="isEdit"> Delete</button></td> 
+           </tr> 
+        </tbody>
+          </table>
+      
+    </div> 
+</div>
+
